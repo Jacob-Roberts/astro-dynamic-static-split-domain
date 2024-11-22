@@ -1,5 +1,11 @@
 # astro-dynamic-static-split-domain
 
+## 0.0.4
+
+### Patch Changes
+
+- 6a429cf: Add jsdoc comments for integration
+
 ## 0.0.3
 
 ### Patch Changes
