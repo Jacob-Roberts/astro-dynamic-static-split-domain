@@ -1,17 +1,21 @@
-import tailwind from "@astrojs/tailwind";
-import { createResolver } from "astro-integration-kit";
-import { hmrIntegration } from "astro-integration-kit/dev";
-import { defineConfig } from "astro/config";
+import tailwind from '@astrojs/tailwind';
+import { createResolver } from 'astro-integration-kit';
+import { hmrIntegration } from 'astro-integration-kit/dev';
+import { defineConfig } from 'astro/config';
 
-const { default: packageName } = await import("package-name");
+const { default: dynamicStaticSplitDomain } = await import(
+	'astro-dynamic-static-split-domain'
+);
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		tailwind(),
-		packageName(),
+		dynamicStaticSplitDomain({
+			dynamicBase: 'https://dynamic.example',
+		}),
 		hmrIntegration({
-			directory: createResolver(import.meta.url).resolve("../package/dist"),
+			directory: createResolver(import.meta.url).resolve('../package/dist'),
 		}),
 	],
 });

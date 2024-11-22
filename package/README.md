@@ -1,60 +1,77 @@
-# `package-name`
+# `astro-dynamic-static-split-domain`
 
-This is an [Astro integration](https://docs.astro.build/en/guides/integrations-guide/) that TODO:description
+This is an [Astro integration](https://docs.astro.build/en/guides/integrations-guide/) that allows you to split the domains that your static content and dynamic content are served on
 
 ## Usage
 
 ### Prerequisites
 
-TODO:
+This may work with all astro deployment adapters,
+but this was designed to work with the node adapter.
 
 ### Installation
 
 Install the integration **automatically** using the Astro CLI:
 
 ```bash
-pnpm astro add package-name
+pnpm astro add astro-dynamic-static-split-domain
 ```
 
 ```bash
-npx astro add package-name
+npx astro add astro-dynamic-static-split-domain
 ```
 
 ```bash
-yarn astro add package-name
+yarn astro add astro-dynamic-static-split-domain
+```
+
+```bash
+bunx astro add astro-dynamic-static-split-domain
 ```
 
 Or install it **manually**:
 
 1. Install the required dependencies
 
-```bash
-pnpm add package-name
-```
+    ```bash
+    pnpm add astro-dynamic-static-split-domain
+    ```
 
-```bash
-npm install package-name
-```
+    ```bash
+    npm install astro-dynamic-static-split-domain
+    ```
 
-```bash
-yarn add package-name
-```
+    ```bash
+    yarn add astro-dynamic-static-split-domain
+    ```
+
+    ```bash
+    bun add astro-dynamic-static-split-domain
+    ```
 
 2. Add the integration to your astro config
 
-```diff
-+import integration from "package-name";
+    ```diff
+    +import dynamicStaticSplitDomain from "astro-dynamic-static-split-domain";
 
-export default defineConfig({
-  integrations: [
-+    integration(),
-  ],
-});
-```
+    export default defineConfig({
+      integrations: [
+    +    dynamicStaticSplitDomain(),
+      ],
+    });
+    ```
 
 ### Configuration
 
-TODO:configuration
+There is only a single option to configure this integration:
+
+`dynamicBase`
+
+```js
+dynamicStaticSplitDomain({
+  dynamicBase: "https://api.myastrosite.com"
+})
+```
 
 ## Contributing
 
@@ -63,7 +80,7 @@ This package is structured as a monorepo:
 - `playground` contains code for testing the package
 - `package` contains the actual package
 
-Install dependencies using pnpm: 
+Install dependencies using pnpm:
 
 ```bash
 pnpm i --frozen-lockfile
@@ -79,8 +96,4 @@ You can now edit files in `package`. Please note that making changes to those fi
 
 ## Licensing
 
-[MIT Licensed](https://github.com/TODO:/blob/main/LICENSE). Made with ❤️ by [TODO:](https://github.com/TODO:).
-
-## Acknowledgements
-
-TODO:
+[MIT Licensed](https://github.com/Jacob-Roberts/astro-dynamic-static-split-domain/blob/main/package/LICENSE). Made with ❤️ by [Jacob-Roberts](https://github.com/Jacob-Roberts).
