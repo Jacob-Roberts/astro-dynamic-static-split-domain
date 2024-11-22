@@ -1,6 +1,6 @@
 {
   "name": "astro-dynamic-static-split-domain",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An astro integration that allows you to split the domains that your static content and dynamic content are served on",
   "author": {
     "email": "jroberts.g1ql8@simplelogin.com",
