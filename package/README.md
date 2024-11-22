@@ -9,6 +9,8 @@ This is an [Astro integration](https://docs.astro.build/en/guides/integrations-g
 This may work with all astro deployment adapters,
 but this was designed to work with the node adapter.
 
+This project is ESM only!
+
 ### Installation
 
 Install the integration **automatically** using the Astro CLI:

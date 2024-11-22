@@ -1,16 +1,19 @@
-# Astro Starter Kit: Basics
+# Astro Starter Kit: Dynamic Static Split Split Domains
 
 ```sh
-npm create astro@latest -- --template basics
+npm create astro@latest -- --template self-host-split-domains-static-dynamic
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Jacob-Roberts/astro-dynamic-static-split-domain/tree/latest/playground)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/Jacob-Roberts/astro-dynamic-static-split-domain/tree/latest/playground)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+
+This example shows how to build a site with two separate domains. One for serving static content and one for dynamic.
+
+Both are bundled up in a Dockerfile. The static site can be deployed to a CDN, and the dynamic can be accessed directly.
 
 ## 🚀 Project Structure
 
