@@ -1,6 +1,6 @@
 {
   "name": "astro-dynamic-static-split-domain",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An astro integration that allows you to split the domains that your static content and dynamic content are served on",
   "author": {
     "email": "jroberts.g1ql8@simplelogin.com",
@@ -8,7 +8,12 @@
     "url": "https://jakerob.pro"
   },
   "license": "MIT",
-  "keywords": ["astro-integration", "astro-component", "withastro", "astro"],
+  "keywords": [
+    "astro-integration",
+    "astro-component",
+    "withastro",
+    "astro"
+  ],
   "homepage": "https://github.com/Jacob-Roberts/astro-dynamic-static-split-domain",
   "publishConfig": {
     "access": "public"
@@ -21,7 +26,9 @@
     }
   },
   "main": "./dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "ci": "npm run build && npm run check-exports",
     "build": "tsc",
